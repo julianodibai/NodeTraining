@@ -64,7 +64,7 @@ app.post("/failure", (req, res) =>{
     res.redirect("/");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("http://localhost:3000/")
     console.log("Mailchimp doc: https://mailchimp.com/developer/marketing/api/")
     console.log("emails cadastrados: https://us21.admin.mailchimp.com/lists/members/#p:1-s:25-sa:last_update_time-so:false")
